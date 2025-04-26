@@ -1,12 +1,16 @@
-# React + Vite
+# Physics Simulation Effect
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A minimal 3D physics demo using `@react-three/fiber` and `@react-three/rapier`.
 
-Currently, two official plugins are available:
+### What it does
+- Renders 100 spheres with randomized positions
+- Uses Rapier physics with **zero gravity** to create subtle floating interactions
+- Includes lighting for depth and visibility
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project was a quick exploration into integrating physics simulation within a React + Three.js environment, using `@react-three/rapier` for performant, real-time physics.
 
-## Expanding the ESLint configuration
+**Tools:** React, @react-three/fiber, @react-three/rapier, Three.js
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+> Note: Since gravity is disabled, objects stay suspended and gently respond to physics interactions.
